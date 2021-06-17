@@ -1,0 +1,774 @@
+/*@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");*/
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap&subset=greek');
+* {
+  box-sizing: border-box;
+}
+@font-face {font-family: "PF Din Text Universal ";
+  src: url("../fonts/PFDinTextUniversal.eot"); /* IE9*/
+  src: url("../fonts/PFDinTextUniversal.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/PFDinTextUniversal.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/PFDinTextUniversal.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/PFDinTextUniversal.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/PFDinTextUniversal.svg#PF Din Text Universal Medium") format("svg"); /* iOS 4.1- */
+}
+
+
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #fdca96,#fdfd96); 
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+.navbar
+{
+	background-color:#fdca96;
+	
+}
+	
+ 
+.navbar-toggler
+{
+    width: 47px;
+    height: 34px;
+    border:none;
+}
+.navbar-toggler .line{
+	
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.dropdown-content {
+
+  min-width: 140px;
+  
+  display: none;
+  position: absolute;
+  background-color:#fdca96;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+
+  font-weight: bold;
+  color:#335b55;
+  padding: 10px 12px;
+  text-decoration: none;/*don't underline*/
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+
+
+
+
+
+header .nav-item:last-child 
+{
+  padding-right: 1.9em;
+  
+}
+
+header .nav-item {
+	font-weight: bold;
+  padding: 0.8em;
+	
+	
+}
+
+.fa_custom {
+color: #335b55;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+
+header .navbar-brand:hover{
+ color: #8a8afc;
+}
+header .nav-link:hover
+{	
+	color:#8a8afc;
+	
+}
+header .nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: #8a8afc;
+  transition: width 0.5s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header .nav-link:hover:after { 
+  width: 100%;
+  left: 0; 
+}
+
+
+header a {
+  font-family:'PF Din Text Universal';
+  font-size: 1em;
+  color:#335b55;/*whitesmoke*/
+}
+
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+	padding-bottom: 35vmin;
+}
+
+header .row .col-md-4{
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-4 img {
+  width:100%;
+ 
+}
+
+.container a{
+
+  text-decoration: underline; /*For accessibility?*/  
+
+
+}
+/*class for setting background (article tag) */
+.article-content {
+  background: #ff512f;
+  /* fallback for old browsers */
+  background: var(--bggradient);
+}
+
+
+header {
+  background: #ff512f;
+  /* fallback for old browsers */
+  background: var(--bggradient);
+}
+
+header .container .col-md-7 h6 {
+  font-family:'PF Din Text Universal';
+  padding: 1.5vmin;
+  font-size: 5vmin;/*den eixe*/
+  letter-spacing: 4px;
+  color: #335b55;/*den eixe*/
+}
+
+
+header .container .col-md-7 h1 {
+  font-family:'PF Din Text Universal';
+  font-size: 10vmin;/*8.5*/
+  font-weight: bold;
+  padding: 0.1em 0em;
+  color: #335b55;/*den eixe*/
+}
+
+
+/****kartes***********/
+
+
+
+header .container-c .col-md-7 h2 {
+  font-family:'PF Din Text Universal';
+  font-size: 9vmin;/*8.5*/
+  font-weight: bold;
+  padding: 0.1em 0em;
+
+  color: #335b55;/*den eixe*/
+}
+
+header .container-c .row .col-md-7 {
+  padding: 5vmin 4vmin;
+padding-bottom: 17vmin;
+}
+
+header .container-c .row .col-md-4{
+  padding: 5vmin 2vmin;
+}
+
+
+
+.primary-btn {
+  border-radius: 30px;
+  font-weight: bold;
+}
+.button1 {background-color: #4CAF50;}
+
+
+/****Photos in pages.***********/
+.img-fluid { 
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/********** section 1 **************/
+
+.section-1 {
+  padding: 15vmin 0vmin 20vmin 0vmin;
+  height:auto;
+}
+
+.section-1 . row .col-md-6 .People Thinking. picture. img{
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 1em;
+  height:auto; /*den uphrxe*/
+  
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -18vmin;
+  background: rgb(219, 226, 227);/*white*/
+  border-radius: 1em;
+  text-align: left;
+  padding: 5vmin 5vmin 5vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-family:'PF Din Text Universal';
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 1.5em;
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-family: 'Comfortaa', cursive;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 1);
+}
+
+/*  Section 2  */
+
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url("..bb.gif");/*eikona*/
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+.cover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.cover .content {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 19vmin;
+}
+
+.cover .content > h1 {
+  font-family:'PF Din Text Universal';
+  font-size: 6vmin;
+  color: whitesmoke;
+}
+
+.cover .content > p {
+  font-family:'PF Din Text Universal';
+  font-size: 2vmin;
+  color: #e5e5e5;
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+}
+
+.numbers {
+  margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: tomato;
+}
+
+.numbers .rect > p {
+  font-family:'PF Din Text Universal';
+}
+
+
+
+
+
+
+/* Section Team */
+
+.section-4 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+}
+
+.section-4 .team {
+  padding: 10vmin 4vmin;
+}
+
+.section-4 .card {
+  width: 22em;
+  margin-top: 10vmin;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-4 .card-body > a {
+  font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+  padding-left: 3rem;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background:(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+
+
+footer {
+	font-family:'PF Din Text Universal';
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 14vmin;
+}
+footer a{
+	text-decoration:none;
+	color:white;
+}
+footer a:hover{
+	text-decoration:none;
+	color:#6c757d;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #fdfd96;
+}
+
+/* It is Adjacent sibling combinator */
+footer .column i + i {
+  padding: 0 0.7em;
+}
+
+/*login*/
+.login-box
+{
+    font-family:'PF Din Text Universal';
+    max-width: 700px; 
+    float: none;
+    margin:150px auto;
+
+}
+
+.login-left /*login box*/
+{   
+	position:center;
+	border-radius: 2em;
+    background:#ADD8E6;
+    padding:30px;
+}
+
+.login-right /*register box*/
+{
+	position:center;
+	border-radius: 2em;
+    background:#9696fd;
+    padding:30px;
+}
+.section-la
+{
+	padding-top: 20px;
+    padding-bottom: 20px;
+	
+}
+.section-laa
+{
+	padding-top: 50px;
+    padding-bottom: 20px;
+	
+}
+
+.CARDS .img-fluid 
+{ 
+    max-width: 100%;
+    
+}
+
+.inf .img-fluid 
+{ 
+    max-width: 100%;
+    
+}
+.mpanel{
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding-left:2vmin;
+  padding-right:2vmin;
+}
+
+.text-style{
+	font-family:'PF Din Text Universal';
+}
+.organ-style a{
+	text-decoration:none;
+	color:#335b55;
+}
+.organ-style a:hover{
+	text-decoration:none;
+	color:#bcbcff;
+}
+
+p.goals
+{     
+	margin: auto;
+	margin-top:4px;
+	margin-bottom:4px;
+	padding:4px;
+}
+
+
+
+.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.bs-example{
+    	margin: 10px;
+    }
+input[type="radio"] {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.btn-primary 
+{
+	border-color: #fdfd96;
+}
+/****ifnmenu***********/
+
+.inf .card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+	border-top: 1px solid rgba(34, 36, 38, .1);
+	border-bottom: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+     
+}
+.inf .card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 3;
+    border: none;
+
+    margin-top:30px;
+
+}
+
+.inf .title {
+ 
+    margin-bottom: 50px;
+ 
+}
+/****draseis***********/
+
+.ACT
+ {
+   margin-top: 30px;
+    margin-bottom: 50px;
+ 
+}
+.ACT .col-md-8
+{
+	margin-top: 30px;
+}
+/****GIA TO LINK STHN EPEXERGASIA BASEWN***********/
+.HOVER a:hover{
+	text-decoration:none;
+	color:#bcbcff;
+}
+.HOVER a{
+	text-decoration:none;
+	color:#335b55;
+}
+.HOVER
+{
+	text-decoration:none;
+	margin-top:50px;
+}
+.section-space
+{
+		 margin-top:150px;
+         margin-bottom:150px;
+}
+.CLOCK-container
+{
+	margin:auto;
+    margin-top: 4rem;
+
+
+	
+}
+  .shadow-box-example {
+    	color: #FF0000;
+
+   background-color:#ededed;
+   position: relative;
+  z-index: 1;
+  width: 22rem;
+  height: 7rem;
+  padding-top: 3.9vmin;
+  border-radius: 0.5em;
+ margin:auto;
+  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  }
+
+.shadow-box-example2 {
+    
+   background-color:#8c8181;
+   position: relative;
+  z-index: 1;
+  width: 8rem;
+  height: 5rem;
+  padding-top: 2vmin;
+  border-radius: 0.5em;
+ margin:auto;
+  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+  animation-name: example2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  }
+
+@keyframes example2 {
+	0% { background-color:#8c8181;  color: #8c8181; }
+50% { background-color: #e6aead;  color:#9f2728; }
+100% { background-color: #8c8181; color: #8c8181;}
+
+
+}
+@keyframes example 
+	{
+	0% { background-color:red; }
+50% { background-color: #ededed; }
+100% { background-color: red; }
+
+
+}
+
+.card1:hover
+{
+	background:	#aaa0c5;
+}
+
+.card2:hover
+{
+	background: #d7d7d7;
+}
+
+.card3:hover
+{
+	background: white;
+}
+
+.box
+
+{  
+	
+margin:auto;
+  width:75%;
+  padding: 2px;
+  background-color: #eaab00; /* gold */
+  /* Single pixel data uri image http://jsfiddle.net/LPxrT/ 
+  /* background-image: gold, gold, white */
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),  url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),
+url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-repeat: no-repeat;
+  background-size: 0 2px, 0 100%, 0% 2px;
+  background-position: top center, top center, bottom center;
+	  text-align: center;
+
+  -webkit-animation: drawBorderFromCenter 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes drawBorderFromCenter {
+    0% {
+      background-size: 0 2px, 0 0, 100% 100%;
+    }
+    20% {
+      background-size: 100% 2px, 100% 0, 100% 100%;
+    }
+    66%
+    {
+      background-size: 100% 2px, 100% 98%, 100% 100%;
+    }
+    99%
+    {
+      background-size: 100% 2px, 100% 98%, 0 2px;
+    }
+}
+
+
+
+.move {
+
+  position: relative;
+}
+
+.move .text-wrapper 
+{
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.move .letter {
+  display: inline-block;
+  line-height: 2rem;
+  font-size:2.3rem;
+		font-weight: 450;
+
+
+}
+
+
+.content1
+{
+	  padding:0.8em;
+
+  background: #d5d5fe;
+  text-align: center;
+}
+
+
+
+.move2 {
+  font-weight: 400;
+  font-size:2rem;
+}
+
+.move2 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.move2 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color:#335b55;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.move2 .letter {
+  display: inline-block;
+  line-height: 1em;
+  font-size:2rem;
+
+}
+
+p.b {
+	margin-left:1rem;
+    margin-right:1rem;
+    font-size: large;
+	font-style: italic;
+}
